@@ -1,0 +1,300 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body,
+    html {
+        overflow-x: hidden;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .logo {
+        color: whitesmoke;
+        font-size: 2.5rem;
+    }
+    
+    header {
+        width: 100vw;
+        height: 100vh;
+        background: url(./Images/sneak.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: whitesmoke;
+        padding: 15px;
+    }
+    
+    .nav-link {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+    
+    .nav-link li {
+        margin: 0 20px;
+    }
+    
+    .header-content {
+        color: rgb(240, 236, 236);
+        margin-bottom: 50px;
+        text-align: center;
+        margin-right: auto;
+        line-height: 1.5;
+    }
+    
+    .header-content h2 {
+        font-size: 6vmin;
+    }
+    
+    .header-content h1 {
+        font-size: 2.5rem;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .header-content .btn {
+        color: #E01401;
+        background: #F5F1C1;
+    }
+    
+    .menu-btn {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .btn {
+        padding: 5px 10px;
+        background-color: rgb(226, 80, 43);
+        color: rgb(243, 226, 196);
+        border-radius: 30px;
+    }
+    /* Events */
+    
+    section {
+        width: 80%;
+        margin: 80px auto;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 4vmin;
+    }
+    
+    .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .row .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .row .col img {
+        width: 80%;
+    }
+    
+    .events .row {
+        margin-top: 50px;
+    }
+    
+    h4 {
+        font-size: 3vmin;
+        margin: 10px auto;
+    }
+    
+    .events .btn {
+        margin-top: 20px;
+    }
+    
+    .explore {
+        width: 100%;
+        height: 100vh;
+        background: url(./Images/explore.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    
+    .explore-content {
+        width: 60%;
+        color: rgb(216, 188, 183);
+        padding: 50px;
+        display: flex;
+        align-items: centre;
+        flex-direction: column;
+    }
+    
+    .explore-content .btn {
+        margin-top: 40px;
+        width: 15%;
+    }
+    
+    .explore-content h1 {
+        font-size: 7vmin;
+        margin-bottom: 50px;
+        color: rgb(247, 238, 236);
+    }
+    
+    .content-col {
+        width: 40%;
+    }
+    
+    .img-col {
+        width: 60%;
+    }
+    
+    .tours .img-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .img-gallery img {
+        max-width: 300px;
+        margin: 10px;
+    }
+    
+    .content-col h1 {
+        font-size: 7vmin;
+    }
+    
+    .content-col p {
+        padding: 0;
+        margin: 30px auto;
+    }
+    
+    .content-col .btn {
+        margin-left: -100px;
+    }
+    
+    .footer {
+        width: 100%;
+        min-height: 100px;
+        padding: 20px 80px;
+        margin: 0;
+        background: rgba(247, 88, 25, 0.8);
+        text-align: centre;
+    }
+    
+    .footer p {
+        margin: 20px auto;
+        padding: 20px auto;
+    }
+    /* Animations */
+    
+    img {
+        transition: transform .3s ease;
+    }
+    
+    img:hover {
+        transform: scale(1.2);
+    }
+    
+    .btn:hover {
+        background: rgb(90, 6, 6);
+        color: whitesmoke;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24);
+    }
+    
+    li a:hover {
+        color: black;
+        cursor: pointer;
+    }
+    /* Media Queries */
+    
+    @media only screen and (max-width:850px) {
+        .navbar {
+            padding: 0;
+        }
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .nav-link {
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            background: rgb(90, 90, 221);
+            margin-top: -900px;
+            transition: all 0.5s ease;
+        }
+        .menu-btn {
+            display: block;
+        }
+        .mobile-menu {
+            margin-top: 0;
+        }
+        .nav-link li {
+            margin: 30px auto;
+        }
+        /* Events */
+        .row {
+            flex-direction: column;
+        }
+        .col img {
+            max-width: 90%;
+        }
+        .row .col {
+            margin: 20px auto;
+        }
+        .row .col p {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        /* Explore */
+        .explore-content {
+            width: 100%;
+        }
+        .explore-content .btn {
+            width: 50%;
+        }
+        .tours .col {
+            width: 100%;
+        }
+        .img-gallery {
+            align-items: center;
+            justify-content: center;
+        }
+        .img-gallery img {
+            width: 100%;
+        }
+        .content-col h1 {
+            margin-left: 30px;
+        }
+        .footer {
+            padding: 10px;
+            /* max-height: 50px; */
+        }
+    }
