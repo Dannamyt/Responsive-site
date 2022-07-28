@@ -250,6 +250,9 @@
             margin-top: -900px;
             transition: all 0.5s ease;
         }
+         header {
+            background: #E01401;
+        }
         .menu-btn {
             display: block;
         }
